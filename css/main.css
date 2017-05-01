@@ -1,19 +1,60 @@
+h1{
+    font-family: sans-serif;
+    font-weight: 400;
+    margin-bottom: -20px;
+    margin-left: 30px;
+}
+
+h2{
+    font-family: sans-serif;
+    font-weight: 100;
+    margin-left: 30px;
+}
+
+img.logo{
+    vertical-align: bottom;
+}
 img.small{
     width: 200px;
+    vertical-align: bottom;
 }
 
 img.medium{
     width: 200px;
+    vertical-align: bottom;
 }
 
 img.large{
     width: 200px;
+    vertical-align: bottom;
 }
 
 img.huge{
     width: 300px;
+    vertical-align: bottom;
 }
 
-tr{
-    width: 400px;
+table, tr, td{
+    font-family: sans-serif;
+    font-weight: 200;
+}
+
+td{
+    padding-left: 30px;
+}
+
+th{
+    text-align: left;
+    padding: 0px 20px;
+    font-weight: 500;
+}
+
+/* every other row, starting with the 2nd one */
+tr:nth-child(2n){
+    background-color: beige;
+}
+
+span{
+    font-weight: 200;
+    font-style: italic;
 }
