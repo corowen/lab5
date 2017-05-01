@@ -1,3 +1,7 @@
+div.heading{
+    float: left;
+}
+
 h1{
     font-family: sans-serif;
     font-weight: 400;
@@ -11,9 +15,46 @@ h2{
     margin-left: 30px;
 }
 
+ul{
+    float: right;
+    list-style-type: none;
+}
+
+li{
+    float: left;
+    padding: 0px 10px;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+a:link{
+    display: block;
+    padding: 7px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+/* visited is once you've clicked */
+a:visited{
+    color: orange;
+}
+
+/* hover is when you hover the mouse over */
+a:hover{
+    background-color: beige;
+}
+
+/* active is when you click on the link */
+a:active{
+    color: azure;
+}
+/* a:link, a:visited, a:hover, a:active
+    Must be in this order to use!*/
+
 img.logo{
     vertical-align: bottom;
 }
+
 img.small{
     width: 200px;
     vertical-align: bottom;
@@ -37,19 +78,25 @@ img.huge{
 table, tr, td{
     font-family: sans-serif;
     font-weight: 200;
+    float: clear;
+}
+
+table{
+    border-collapse: collapse;
 }
 
 td{
     padding-left: 30px;
+    border-left: 1px solid #CECBCB;
 }
 
 th{
     text-align: left;
-    padding: 0px 20px;
+    padding: 3px 30px;
     font-weight: 500;
 }
 
-/* every other row, starting with the 2nd one */
+/* every other row, starting with the 2nd one because we specified 2n inside the ()*/
 tr:nth-child(2n){
     background-color: beige;
 }
