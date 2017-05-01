@@ -51,30 +51,6 @@ a:active{
 /* a:link, a:visited, a:hover, a:active
     Must be in this order to use!*/
 
-img.logo{
-    vertical-align: bottom;
-}
-
-img.small{
-    width: 200px;
-    vertical-align: bottom;
-}
-
-img.medium{
-    width: 200px;
-    vertical-align: bottom;
-}
-
-img.large{
-    width: 200px;
-    vertical-align: bottom;
-}
-
-img.huge{
-    width: 300px;
-    vertical-align: bottom;
-}
-
 table, tr, td{
     font-family: sans-serif;
     font-weight: 200;
@@ -83,11 +59,21 @@ table, tr, td{
 
 table{
     border-collapse: collapse;
+    border-bottom: 1px solid #CECBCB;
 }
 
 td{
     padding-left: 30px;
     border-left: 1px solid #CECBCB;
+    border-right: 1px solid #CECBCB;
+}
+
+th:nth-child(1){
+    border-left: 1px solid #CECBCB;
+}
+
+tr:nth-child(2){
+    border-top: 1px solid #CECBCB;
 }
 
 th{
@@ -96,9 +82,18 @@ th{
     font-weight: 500;
 }
 
-/* every other row, starting with the 2nd one because we specified 2n inside the ()*/
+tr{
+    vertical-align: bottom;
+}
+
+/* every other row, starting with the 2nd one because we specified 2n inside the () */
 tr:nth-child(2n){
     background-color: beige;
+}
+
+.images{
+    border-left: 0px solid #CECBCB;
+    border-right: 0px solid #CECBCB;
 }
 
 span{
