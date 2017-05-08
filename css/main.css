@@ -3,14 +3,14 @@ div.heading{
 }
 
 h1{
-    font-family: sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 400;
     margin-bottom: -20px;
     margin-left: 30px;
 }
 
 h2{
-    font-family: sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 100;
     margin-left: 30px;
 }
@@ -23,7 +23,7 @@ ul{
 li{
     float: left;
     padding: 0px 10px;
-    font-family: sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 100;
 }
 
@@ -99,4 +99,23 @@ tr:nth-child(2n){
 span{
     font-weight: 200;
     font-style: italic;
+}
+
+div.form{
+    float: left;
+    margin-top: 100px;
+    margin-left: 50px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 100;
+    width: 650px;
+}
+
+fieldset{
+    width: 600px;
+    border: 1px solid;
+}
+
+.submit{
+    font-size: 24px;
+    margin-left: 40%;
 }

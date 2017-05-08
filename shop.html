@@ -21,7 +21,8 @@
             <li><a href="#contactus.html">Contact Us</a></li>
         </ul>
     </div>
-    <form>
+    <div class="form">
+    <form> <!-- size=20 for most of them to ensure consistency -->
         <p>First Name:<input type="text" name="firstname" size="20"></p>
         <p>Last Name:<input type="text" name="lastname" size="20"></p>
         <p>Address:<input type="text" name="address" size="30"></p>
@@ -87,12 +88,18 @@
             <input type="radio" name="gender" value="female">Female
             <input type="radio" name="gender" value="other">Other
         </p>
-        <p>Favorite Hydro Flask Colors (select five):<br> <!-- using <br> to space radio buttons away from text -->
-            <input type="radio" name="color" value="red" checked="checked">Red
-            <input type="radio" name="color" value="white">White
-            <input type="radio" name="color" value="black">Black
-            <input type="radio" name="color" value="limegreen">Lime Green
-            <input type="radio" name="color" value="forestgreen">Forest Green
+        <p>Favorite Hydro Flask Colors (You can select more than one option by holding down control on a PC or command on a Mac, select five from this list):<br> <!-- using <br> to space radio buttons away from text -->
+            <select name="colors" size="4" multiple="multiple">
+                <option value="red" selected="selected">Red
+                <option value="white">White
+                <option value="black">Black
+                <option value="limegreen">Lime Green
+                <option value="forestgreen">Forest Green
+                <option value="skyblue">Sky Blue
+                <option value="oceanblue">Ocean Blue
+                <option value="orange">Orange
+                <option value="violet">Violet
+            </select>
         </p>
         <fieldset>
             <p>Credit Card Number:<input type="password" name="creditcardnumber" size="20"></p>
@@ -102,7 +109,10 @@
             <img src="images/mastercard1979.png" alt="Master Card" width="160px">
             <img src="images/visa.png" alt="Visa" width="300px">
         </fieldset>
-        <input type="submit" name="submit" value="Submit">
+        <p></p> <!-- to add a space -->
+        <input type="submit" name="submit" value="Submit" class="submit">
+        <p></p> <!-- to add a space -->
     </form>
+    </div>
 </body>
 </html>
